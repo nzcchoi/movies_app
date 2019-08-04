@@ -25,8 +25,9 @@ class MovieList extends StatelessWidget {
     );
   }
 
-  @override
+
   void dispose() {
+    print('dispose');
     _bloc.dispose();
   }
 
@@ -55,7 +56,8 @@ class MovieList extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: new Column(children: <Widget>[
+        child: new Column(
+          children: <Widget>[
           new Text("${item.title} (${item.voteCount})",
               style: new TextStyle(
                 fontWeight: FontWeight.bold,
@@ -78,11 +80,5 @@ class MovieList extends StatelessWidget {
             ],
           )
         ]));
-  }
-
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return null;
   }
 }

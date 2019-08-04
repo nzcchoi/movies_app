@@ -2,6 +2,13 @@
 
 A new Flutter project.
 
+Based on the "Architect your Flutter project using BLOC pattern"
+https://medium.com/flutterpub/architecting-your-flutter-project-bd04e144a8f1
+
+1. Changed bloc to use StreamController 
+2. Removed resources and simplifed models
+3. Displayed movie title and added new buttons to increase and decrease voteCount
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
